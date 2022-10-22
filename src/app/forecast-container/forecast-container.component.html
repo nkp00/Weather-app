@@ -1,0 +1,14 @@
+<table class="table mt-5">
+    <thead>
+        <tr>
+            <th *ngFor="let day of DAYS">{{day}}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td *ngFor="let weather of forecastList">
+                <app-forecast-item [weatherDetail]="weather"></app-forecast-item>
+            </td>
+        </tr>
+    </tbody>
+</table>
